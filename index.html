@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="imagenes/Logo.png" class="logo" alt="logo de alura">
+        </header>
+
+        <main>
+            <section>
+                <textarea class="cuadro-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div> 
+                    <h1 class="recomendaciones"> Solo letras minúsculas y sin acentos.</h1>
+                </div>
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="area-mensaje-copiar">
+                <textarea class="cuadro-mensaje" cols="20" rows="10" placeholder=""></textarea>
+                <div> 
+                    <h3 class="recomendacioncopiar">Haga clic en el botón para copiar el texto del campo de texto.</h3>
+                </div>  
+                <div> 
+                    <button class="boton-copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p >© Copyright Alura-2023. Desarrollado por: Visliardo Timaure.</p>
+            <a href="https://www.linkedin.com/in/visliardo-timaure-a40524258" target="_blank"><img class="linkedin" src="imagenes/linkedin.png" alt="logo de Linkedin"></a>
+            <a href="https://github.com/Timavi99"  target="_blank"><img class="gitHub" src="imagenes/github.png" alt="Logo de gitHub"></a>
+        </footer>
+
+        <script src="script.js">
+        </script>
+    </body>
+</html>
